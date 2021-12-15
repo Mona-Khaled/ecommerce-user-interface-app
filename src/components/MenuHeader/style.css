@@ -1,0 +1,56 @@
+.menuHeader{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-bottom: 1px solid #cecece;
+    box-shadow: 0 2px 2px -2px #333;
+}
+.menuHeader ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* > means only direct <ul> children of <meuHeader> */
+.menuHeader > ul{
+   display: flex;
+   margin: 0 50px;   /* top/bottom =0  left/right=50px */
+   position: relative; /* cause we will work on some children like <li> with position absolute that's why. */
+}
+.menuHeader > ul > li >span{
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 20px;   /* top/bottom=0  left/right=20px */
+    font-size: 14px;
+}
+.menuHeader > ul > li >span:hover{
+    color: #2874f0;
+}
+.menuHeader > ul > li >ul{
+    position: absolute;
+    background-color: white;
+    left: 0;
+    right: 0;
+    display: none;
+    border: 1px solid #cecece;
+    z-index: 1;
+}
+.menuHeader > ul > li:hover ul{  /* if hovered over .menuHeader > ul > li ....then display ul block  */
+    display: block;
+}
+.menuHeader > ul > li >ul > li{
+    margin: 0 20px;
+    float: left;
+    min-width: 150px;
+}
+.menuHeader > ul > li >ul > li > a{
+    font-weight: bold;
+    display: block;
+}
+.menuHeader > ul > li >ul > li  a{
+    padding: 3px 0;
+    display: block;   /* can't apply padding on anchor tag li without applying display block cause it's an inline element */
+    font-size: 13px;
+    text-decoration: none;
+    color: #707070;
+}

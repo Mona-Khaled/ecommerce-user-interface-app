@@ -1,0 +1,27 @@
+/* .card{
+    width: 100%;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 0px !important;
+}
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 1px solid #cecece;
+} */
+.card{
+    width: calc(100% - 16px);
+    margin: 20px 10px;
+    /* border: 1px solid #e7e7e7; */
+    /* box-shadow: 0 0 3px -2px gray; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 0px !important;
+    background-color: white;
+}
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    border-bottom: 1px solid #cecece;
+    /* font-weight: bold; */
+} 
+
